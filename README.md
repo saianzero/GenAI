@@ -24,16 +24,19 @@ DOCter is a Streamlit-based application that offers personalized healthcare insi
 3. **Document Upload and Processing**:
    - Temporarily stores and processes uploaded documents to split into manageable chunks.
    - Converts chunks into vector embeddings using OpenAI's model, with `FAISS` facilitating efficient similarity searches.
-![alt text](https://i.imgur.com/1lk9K4a.png)
+
+      ![alt text](https://i.imgur.com/1lk9K4a.png)
 
 4. **Query Processing and Response Generation**:
    - Uses a template-driven approach for query generation to the language model `Llama3`.
    - Handles user queries with a retrieval chain that identifies relevant document sections based on vector embeddings.
    - Displays answers and the processing time taken.
-![alt text](https://i.imgur.com/Nd67NHn.png)
+      ![alt text](https://i.imgur.com/Nd67NHn.png)
+
 5. **Chat History**:
    - Keeps a session-based log of queries and responses, accessible via an expandable section in the UI.
-![alt text](https://i.imgur.com/PqBPDJg.png)
+   - 
+      ![alt text](https://i.imgur.com/PqBPDJg.png)
 
 ## Future Enhancements
 - **Input Sanitization and Guardrails**: To be added for enhanced security.
