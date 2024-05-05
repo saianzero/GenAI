@@ -1,4 +1,5 @@
-# Project Documentation: DOCter - Healthcare made Personal
+# Project Documentation (DOCter)
+
 
 ## Project Overview
 DOCter is a Streamlit-based application that offers personalized healthcare insights by processing uploaded medical reports. The application utilizes advanced language models and document processing to provide accurate and relevant answers to user queries.
