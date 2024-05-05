@@ -1,3 +1,5 @@
+!!!Demo bkp file!!!
+
 '''
 Instructions to run the porgram: 
 .\env\Scripts\activate                                                                                                 
@@ -22,7 +24,7 @@ os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
 prompt=ChatPromptTemplate.from_messages(
     [
-        ("system","You are a helpful assistant. Please respond to the user's queries"),
+        ("system","You are a helpful assistant. Please respond to the user's queries."),
         ("user","Question:{question}")
     ]
 )
@@ -41,4 +43,4 @@ if input_text:
     st.write(chain.invoke({'question':input_text}))
 
 
-## Note: API keys have to be regenerated
+## Note: regenerate API keys!
