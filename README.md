@@ -35,10 +35,9 @@ DOCter is a Streamlit-based application that offers personalized healthcare insi
 
 5. **Chat History**:
    - Keeps a session-based log of queries and responses, accessible via an expandable section in the UI.
-   - 
       ![alt text](https://i.imgur.com/PqBPDJg.png)
 
 ## Future Enhancements
-- **Input Sanitization and Guardrails**: To be added for enhanced security.
+- **Input Sanitization and Guardrails**
 - **Integrate Chat Memory**
-- **Integration of PubMed data source**: Source data with additional authoritative medical information.
+- **Integration of PubMed data source**
