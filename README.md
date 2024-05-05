@@ -5,12 +5,12 @@
 DOCter is a Streamlit-based application that offers personalized healthcare insights by processing uploaded medical reports. The application utilizes advanced language models and document processing to provide accurate and relevant answers to user queries.
 
 ## Core Components
-
-- **Language Models**: Utilizes `ChatGroq` and `OpenAIEmbeddings` for natural language understanding and generating vector embeddings for documents.
-- **Document Processing**: Supports uploading PDF documents, which are processed to extract text and convert them into searchable vector embeddings using FAISS.
+- **Language Models**: Utilizes `Groq LCU`, `Llama3` and `OpenAIEmbeddings` for natural language understanding and generating vector embeddings for documents.
+- **Document Processing**: Supports uploading PDF documents, which are processed to extract text and convert them into searchable vector embeddings using `FAISS Vector database`.
 - **User Interaction**: Features an interface for users to upload documents, submit questions, and receive answers. It maintains a session-based chat history for tracking interactions.
 
-## Main Functionalities
+## Main Functionalities 
+`RAG Pipeline implementation`
 
 1. **Environment Initialization**:
    - Loads environment variables and configures API keys for Groq and OpenAI services.
@@ -21,10 +21,10 @@ DOCter is a Streamlit-based application that offers personalized healthcare insi
 
 3. **Document Upload and Processing**:
    - Temporarily stores and processes uploaded documents to split into manageable chunks.
-   - Converts chunks into vector embeddings using OpenAI's model, with FAISS facilitating efficient similarity searches.
+   - Converts chunks into vector embeddings using OpenAI's model, with `FAISS` facilitating efficient similarity searches.
 
 4. **Query Processing and Response Generation**:
-   - Uses a template-driven approach for query generation to the language model.
+   - Uses a template-driven approach for query generation to the language model `Llama3`.
    - Handles user queries with a retrieval chain that identifies relevant document sections based on vector embeddings.
    - Displays answers and the processing time taken.
 
