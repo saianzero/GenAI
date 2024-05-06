@@ -42,3 +42,4 @@ DOCter is a Streamlit-based application that offers personalized healthcare insi
 - **Input Sanitization and Guardrails**
 - **Integrate Chat Memory with 'save chat' option**
 - **Integration of PubMed data source**
+- **Cloud Integration**
